@@ -11,21 +11,111 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="container header">
+          <a class="header__logo_wrapper">
+            <svg class="header__logo" width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <!--
+            При инициализации header-nav.js
+            добавляется класс header__wrapper-nav--closed
+            при клике на кнопку header__toggle класс меняется на header__wrapper-nav--opened
+          -->
+          <nav class="header__wrapper-nav">
+            <button class="header__toggle" type="button">
+              <svg class="header__menu-close" width="24" height="12">
+                <use xlink:href="img/sprite_auto.svg#burger"></use>
+              </svg>
+              <svg class="header__menu-open" width="13" height="13">
+                <use xlink:href="img/sprite_auto.svg#close"></use>
+              </svg>
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#" aria-label="Перейти к преимуществам.">
+                  Преимущества
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#" aria-label="Перейти к направлениям.">
+                  Доставка
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#" aria-label="Перейти к ближайших круизов.">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#" aria-label="Перейти к контактам.">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container footer">
+          <a class="footer__logo_wrapper">
+            <svg class="footer__logo" width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__menu">
+              <li class="footer__item">
+                <a class="footer__link" href="#" aria-label="Перейти к преимуществам.">
+                  Преимущества
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" aria-label="Перейти к направлениям.">
+                  Доставка
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" aria-label="Перейти к ближайших круизов.">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" aria-label="Перейти к контактам.">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          <ul class="footer__social">
+            <li class="footer__item">
+              <a class="footer__link-social" href="https://vk.com/htmlacademy" aria-label="Перейти на нашу страницу в Вконтакте.">
+                <svg class="footer__vkontakte" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link-social" href="#" aria-label="Перейти на нашу страницу в Printerest.">
+                <svg class="footer__pinterest" width="22" height="22" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link-social" href="#" aria-label="Перейти на нашу страницу в Фейсбуке.">
+                <svg class="footer__ok" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
