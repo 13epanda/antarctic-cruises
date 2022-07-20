@@ -11,7 +11,53 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="container header">
+          <a class="header__logo">
+            <svg width="70" height="38" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <!--
+            При инициализации header-nav.js
+            добавляется класс header__wrapper-nav--closed
+            при клике на кнопку header__toggle класс меняется на header__wrapper-nav--opened
+          -->
+          <nav class="header__wrapper-nav">
+            <button class="header__toggle" type="button">
+              <span class="visually-hidden">Открыть меню.</span>
+              <svg class="header__menu-closed" width="24" height="12" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+              <svg class="header__menu-opened" width="13" height="13" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Перейти к преимуществам.">
+                    Преимущества
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Перейти к направлениям.">
+                    Направления
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Перейти к ближайшим круизам.">
+                    Ближайшие круизы
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Перейти к контактам.">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
       <main>
         <section class="intro">
@@ -25,7 +71,58 @@
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container footer">
+          <a class="footer__logo">
+            <svg width="70" height="38" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти к преимуществам.">
+                Преимущества
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти к направлениям.">
+                Направления
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти к ближайшим круизам.">
+                Ближайшие круизы
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти к контактам.">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти на нашу страницу в Фейсбуке.">
+                <svg width="10.97" height="20" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти на нашу страницу в Инстаграме.">
+                <svg width="19.49" height="20" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" aria-label="Перейти на нашу страницу в Твиттере.">
+                <svg width="19.49" height="16.25" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
