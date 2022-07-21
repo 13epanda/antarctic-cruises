@@ -1,14 +1,7 @@
-body {
-  background-color: red;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @include  vp-767 {
-  }
 
   @include  vp-374 {
     flex-direction: column;
@@ -118,6 +111,10 @@ body {
   width: 285px;
   z-index: 5;
   background-color: $color-default-white;
+}
+
+.header__wrapper--closed .header__logo-svg {
+  fill: $color-alice-blue;
 }
 
 .header__wrapper--closed .header__list {

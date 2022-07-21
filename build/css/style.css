@@ -783,10 +783,6 @@ button,
   pointer-events: auto;
 }
 
-body {
-  background-color: red;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +836,10 @@ body {
   width: 285px;
   z-index: 5;
   background-color: #ffffff;
+}
+
+.header__wrapper--closed .header__logo-svg {
+  fill: #f9fbfd;
 }
 
 .header__wrapper--opened .header__list {
