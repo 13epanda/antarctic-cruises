@@ -1,0 +1,135 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $color-tangaroa;
+
+  @include vp-767 {
+    column-gap: 25px;
+    padding: 50px 0;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 30px;
+    padding: 40px 15px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  cursor: pointer;
+
+  svg {
+    @include vp-767 {
+      width: 38px;
+      height: 20px;
+    }
+
+    @include vp-374 {
+      width: 42px;
+      height: 22px;
+    }
+  }
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 33px;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  @include vp-767 {
+    column-gap: 23px;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 23px;
+  }
+}
+
+.footer__item {
+  list-style-type: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-alice-blue;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 28px;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: auto;
+
+  @include vp-767 {
+    column-gap: 22px;
+  }
+
+  @include vp-374 {
+    margin-left: 0;
+  }
+}
+
+.footer__link-social {
+  display: flex;
+  padding: 8px;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-alice-blue;
+    border-radius: 4px;
+  }
+}
+
+.footer__facebook {
+  @include vp-767 {
+    width: 9px;
+    height: 16px;
+  }
+}
+
+.footer__instagram {
+  @include vp-767 {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.footer__twitter {
+  @include vp-767 {
+    width: 16px;
+    height: 13px;
+  }
+}
