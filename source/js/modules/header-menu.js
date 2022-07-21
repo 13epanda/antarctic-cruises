@@ -1,6 +1,7 @@
+const menu = document.querySelector('.header__wrapper');
+const toggle = document.querySelector('.header__toggle');
+
 const headerMenu = () => {
-  const menu = document.querySelector('.header__wrapper-nav');
-  const toggle = document.querySelector('.header__toggle');
   menu.classList.add('header__wrapper--closed');
   toggle.addEventListener('click', function () {
     if (menu.classList.contains('header__wrapper--closed')) {
