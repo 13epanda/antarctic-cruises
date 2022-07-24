@@ -989,6 +989,90 @@ button,
   object-fit: cover;
 }
 
+.advantages {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.advantages img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.advantages h2 {
+  position: relative;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #011c40;
+}
+
+.advantages__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+}
+
+.advantages__item {
+  width: 30%;
+  height: auto;
+  padding: 30px 42px 50px 30px;
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.advantages__icon-ship {
+  margin-bottom: 25px;
+}
+
+.advantages__icon-two-checkmarks {
+  margin-bottom: 31px;
+}
+
+.advantages__icon-zodiac {
+  margin-bottom: 34px;
+}
+
+.advantages__item h3 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #011c40;
+}
+
+.advantages__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #011c40;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,6 +1269,37 @@ button,
     height: 264px;
   }
 
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__item {
+    padding: 25px 16px 25px 20px;
+  }
+
+  .advantages__icon-ship {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__icon-two-checkmarks {
+    width: 33px;
+    height: 19px;
+    margin-bottom: 28px;
+  }
+
+  .advantages__icon-zodiac {
+    width: 38px;
+    height: 13px;
+    margin-bottom: 31px;
+  }
+
   .footer {
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
@@ -1265,6 +1380,10 @@ button,
   .journey__img img {
     width: 100%;
     height: auto;
+  }
+
+  .advantages__item {
+    width: 100%;
   }
 }
 
@@ -1400,6 +1519,17 @@ button,
   .journey__content h2 {
     font-size: 24px;
     line-height: 34px;
+  }
+
+  .advantages {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .footer {
