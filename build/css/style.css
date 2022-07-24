@@ -785,6 +785,11 @@ button,
 
 .header {
   position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1105,48 +1110,11 @@ button,
   .container {
     padding: 0 32px;
   }
-
-  .journey {
-    row-gap: 40px;
-  }
-
-  .journey__content {
-    margin-right: 30px;
-  }
-
-  .journey__content h2 {
-    font-size: 26px;
-    line-height: 36px;
-  }
-
-  .journey__img img {
-    width: 324px;
-    height: 264px;
-  }
 }
 
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-  }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
   }
 
   .header__logo svg {
@@ -1184,6 +1152,10 @@ button,
     height: 638px;
   }
 
+  .main-screen__content {
+    padding-left: 0;
+  }
+
   .main-screen__content h1 {
     font-size: 50px;
     line-height: 61px;
@@ -1196,22 +1168,21 @@ button,
   }
 
   .journey {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+    row-gap: 40px;
   }
 
   .journey__content {
-    width: 100%;
+    margin-right: 30px;
+  }
+
+  .journey__content h2 {
+    font-size: 26px;
+    line-height: 36px;
   }
 
   .journey__img img {
-    width: 100%;
-    height: auto;
+    width: 324px;
+    height: 264px;
   }
 
   .footer {
@@ -1256,6 +1227,44 @@ button,
   .footer__twitter {
     width: 16px;
     height: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .modal__wrapper {
+    padding: 60px 16px;
+  }
+
+  .modal__content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal--fit-content .modal__content {
+    width: 100%;
+  }
+
+  .journey {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .journey__content {
+    width: 100%;
+  }
+
+  .journey__img img {
+    width: 100%;
+    height: auto;
   }
 }
 

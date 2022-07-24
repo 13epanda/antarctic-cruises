@@ -5,7 +5,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  @include vp-1439 {
+  @include vp-1023 {
     row-gap: 40px;
   }
 
@@ -21,7 +21,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
   color: $color-tangaroa;
 
-  @include vp-1439 {
+  @include vp-1023 {
     margin-right: 30px;
   }
 
@@ -36,7 +36,7 @@
   font-size: 28px;
   line-height: 42px;
 
-  @include vp-1439 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 36px;
   }
@@ -57,7 +57,7 @@
 .journey__img img {
   object-fit: cover;
 
-  @include vp-1439 {
+  @include vp-1023 {
     width: 324px;
     height: 264px;
   }
