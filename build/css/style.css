@@ -784,7 +784,7 @@ button,
 }
 
 .header {
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
