@@ -27,12 +27,9 @@
 
 .input-text__input:hover,
 .input-text__input:focus {
-  outline: 1px solid $color-neon-blue;
+  outline: 5px solid $color-neon-blue;
 }
 
-.input-text__input:invalid {
-  outline: 1px solid $color-torch-red;
-}
 
 /* RADIO */
 
@@ -42,9 +39,10 @@
 }
 
 .input-radio__input {
+  flex-shrink: 0;
   width: 18px;
   height: 18px;
-  margin: 0 15px 0 0;
+  margin: 0 5px 0 0;
   border: none;
   box-sizing: border-box;
   opacity: 0;
@@ -54,16 +52,17 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  margin-right: 15px;
+  margin-right: 5px;
   box-sizing: border-box;
   background-color: $color-alice-blue;
 }
 
-.input-radio__mark svg {
+.input-radio__input ~ .input-radio__mark svg {
   display: none;
 }
 
 .input-radio__input:checked ~ .input-radio__mark svg {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;

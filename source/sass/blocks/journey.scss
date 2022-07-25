@@ -1,9 +1,12 @@
 .journey {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.journey__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 
   @include vp-1023 {
     row-gap: 40px;

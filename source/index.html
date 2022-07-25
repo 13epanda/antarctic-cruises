@@ -70,8 +70,8 @@
             </div>
           </div>
         </section>
-        <section class="container">
-          <div class="journey">
+        <section class="journey">
+          <div class="journey__wrapper container">
             <div class="journey__content">
               <h2>Путешествие на край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
@@ -112,8 +112,8 @@
             </ul>
           </div>
         </section>
-        <section class="container">
-          <div class="cruise">
+        <section class="cruise">
+          <div class="container">
             <h2>Ближайшие круизы</h2>
             <ul class="cruise__list">
               <li class="cruise__item">
@@ -288,13 +288,14 @@
           </div>
         </section>
         <section class="booking">
-          <div class="container booking__wrapper">
-            <img src="img/desktop/reservation-bg.jpg" width="1366" height="555" alt="Фоновая картинка в виде ледников на поверхности воды.">
-            <div class="booking__title">
-              <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
-            </div>
-            <form class="booking__form" action="https://echo.htmlacademy.ru/" method="get">
+          <img src="img/desktop/reservation-bg.jpg" width="1366" height="555" alt="Фоновая картинка в виде ледников на поверхности воды.">
+          <div class="container">
+            <div class="booking__wrapper">
+              <div class="booking__title">
+                <h2>Раннее бронирование</h2>
+                <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+              </div>
+              <form class="booking__form" action="https://echo.htmlacademy.ru/" method="get">
               <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <label class="booking__input input-text">
                 <span class="visually-hidden">Имя</span>
@@ -317,8 +318,11 @@
                 </span>
                 <span class="input-radio__span">Я согласен на обработку моих персональных данных</span>
               </label>
-              <button class="btn button-primary booking__button" type="submit">отправить заявку</button>
+              <button class="btn button-primary booking__button" type="submit">
+                <span>Оставить заявку</span>
+              </button>
             </form>
+            </div>
           </div>
         </section>
         <section class="contacts">
