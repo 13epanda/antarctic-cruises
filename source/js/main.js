@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenu} from "./modules/header-menu";
+import {map} from './modules/map';
+
 
 // ---------------------------------
 
@@ -15,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   headerMenu();
+  map();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
