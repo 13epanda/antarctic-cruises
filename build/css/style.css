@@ -800,6 +800,11 @@ button,
   color: #f9fbfd;
 }
 
+.input-radio__input:hover ~ .input-radio__mark,
+.input-radio__input:focus ~ .input-radio__mark {
+  outline: 5px solid #2c39f2;
+}
+
 .input-radio__input:disabled,
 .input-radio__input:disabled ~ .input-radio__span {
   opacity: 0.3;

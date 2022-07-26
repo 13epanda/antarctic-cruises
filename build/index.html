@@ -300,15 +300,15 @@
               <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <label class="booking__input input-text">
                 <span class="visually-hidden">Имя</span>
-                <input class="input-text__input" type="text" name="name" placeholder="Имя" required>
+                <input class="input-text__input" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" title="Имя не должно быть короче двух букв." required>
               </label>
               <label class="booking__input input-text">
                 <span class="visually-hidden">Телефон</span>
-                <input class="input-text__input" type="tel" name="phone" placeholder="Телефон" required>
+                <input class="input-text__input" type="tel" name="phone" placeholder="Телефон" pattern="[+]7\d{10}" title="Используйте формат: +7123456789." required>
               </label>
               <label class="booking__input input-text">
                 <span class="visually-hidden">E-mail</span>
-                <input class="input-text__input" type="email" name="email" placeholder="E-mail" required>
+                <input class="input-text__input" type="email" name="email" placeholder="E-mail" title="Используйте формат: name@mail.domen" required>
               </label>
               <label class="booking__input input-radio">
                 <input class="input-radio__input" type="radio" name="privacy" required>
