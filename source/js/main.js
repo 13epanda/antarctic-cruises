@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {headerMenu} from "./modules/header-menu";
+import {headerMenu} from './modules/header-menu';
 import {map} from './modules/map';
 
 

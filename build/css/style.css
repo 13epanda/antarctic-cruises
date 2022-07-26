@@ -700,7 +700,7 @@ button,
   justify-content: stretch;
 }
 
-.input-text__input {
+.input-text input {
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -718,28 +718,28 @@ button,
   box-sizing: border-box;
 }
 
-.input-text__input::-webkit-input-placeholder {
+.input-text input::-webkit-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text__input::-moz-placeholder {
+.input-text input::-moz-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text__input:-ms-input-placeholder {
+.input-text input:-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text__input::-ms-input-placeholder {
+.input-text input::-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text__input::placeholder {
+.input-text input::placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text__input:hover,
-.input-text__input:focus {
+.input-text input:hover,
+.input-text input:focus {
   outline: 5px solid #2c39f2;
 }
 
@@ -754,7 +754,7 @@ button,
   align-items: center;
 }
 
-.input-radio__input {
+.input-radio input {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 18px;
@@ -766,7 +766,7 @@ button,
   opacity: 0;
 }
 
-.input-radio__mark {
+.input-radio span {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -776,11 +776,11 @@ button,
   background-color: #f9fbfd;
 }
 
-.input-radio__input ~ .input-radio__mark svg {
+.input-radio input ~ span svg {
   display: none;
 }
 
-.input-radio__input:checked ~ .input-radio__mark svg {
+.input-radio input:checked ~ span svg {
   display: block;
   position: absolute;
   top: 50%;
@@ -793,20 +793,20 @@ button,
   content: "";
 }
 
-.input-radio__span {
+.input-radio label {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
 }
 
-.input-radio__input:hover ~ .input-radio__mark,
-.input-radio__input:focus ~ .input-radio__mark {
+.input-radio input:hover ~ .input-radio span,
+.input-radio input:focus ~ .input-radio span {
   outline: 5px solid #2c39f2;
 }
 
 .input-radio__input:disabled,
-.input-radio__input:disabled ~ .input-radio__span {
+.input-radio__input:disabled ~ .input-radio label {
   opacity: 0.3;
 }
 

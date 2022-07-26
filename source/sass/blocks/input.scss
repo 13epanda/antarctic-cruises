@@ -6,7 +6,7 @@
   justify-content: stretch;
 }
 
-.input-text__input {
+.input-text input {
   position: relative;
   flex-grow: 1;
   padding: 16px 11px;
@@ -21,12 +21,12 @@
   box-sizing: border-box;
 }
 
-.input-text__input::placeholder {
+.input-text input::placeholder {
   color: $color-tangaroa-transparency;
 }
 
-.input-text__input:hover,
-.input-text__input:focus {
+.input-text input:hover,
+.input-text input:focus {
   outline: 5px solid $color-neon-blue;
 }
 
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.input-radio__input {
+.input-radio input {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
@@ -47,7 +47,7 @@
   opacity: 0;
 }
 
-.input-radio__mark {
+.input-radio span {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -56,11 +56,11 @@
   background-color: $color-alice-blue;
 }
 
-.input-radio__input ~ .input-radio__mark svg {
+.input-radio input ~ span svg {
   display: none;
 }
 
-.input-radio__input:checked ~ .input-radio__mark svg {
+.input-radio input:checked ~ span svg {
   display: block;
   position: absolute;
   top: 50%;
@@ -71,19 +71,19 @@
   content: "";
 }
 
-.input-radio__span {
+.input-radio label {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: $color-alice-blue;
 }
 
-.input-radio__input:hover ~ .input-radio__mark,
-.input-radio__input:focus ~ .input-radio__mark {
+.input-radio input:hover ~ .input-radio span,
+.input-radio input:focus ~ .input-radio span {
   outline: 5px solid $color-neon-blue;
 }
 
 .input-radio__input:disabled,
-.input-radio__input:disabled ~ .input-radio__span {
+.input-radio__input:disabled ~ .input-radio label {
   opacity: 0.3;
 }
