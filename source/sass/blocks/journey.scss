@@ -1,6 +1,11 @@
 .journey {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .journey__wrapper {
@@ -10,6 +15,7 @@
 
   @include vp-1023 {
     row-gap: 40px;
+    align-items: flex-start;
   }
 
   @include vp-767 {
@@ -27,6 +33,7 @@
 
   @include vp-1023 {
     margin-right: 30px;
+    padding-right: 0;
   }
 
   @include vp-767 {
@@ -41,8 +48,10 @@
   line-height: 42px;
 
   @include vp-1023 {
+    width: 215px;
     font-size: 26px;
     line-height: 36px;
+    margin-bottom: 17px;
   }
 
   @include vp-374 {
@@ -59,6 +68,7 @@
 }
 
 .journey__img img {
+  margin-top: 10px;
   height: 301px;
   width: auto;
   object-fit: cover;

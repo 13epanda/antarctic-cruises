@@ -4,7 +4,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
 
   @include vp-1023 {
-    padding-top: 100px;
+    padding-top: 65px;
     padding-bottom: 100px;
   }
 
@@ -61,6 +61,7 @@
 
   @include vp-1023 {
     width: 309px;
+    height: 386px;
   }
 
   @include vp-767 {

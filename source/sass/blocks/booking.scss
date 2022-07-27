@@ -21,8 +21,8 @@
   @include vp-1023 {
     flex-direction: column;
     align-content: center;
-    row-gap: 30px;
-    padding: 100px 0;
+    row-gap: 50px;
+    padding: 87px 0 100px;
   }
 
   @include vp-374 {
@@ -32,6 +32,7 @@
 }
 
 .booking__title {
+  text-align: center;
   color: $color-tangaroa;
 }
 
@@ -43,7 +44,7 @@
   line-height: 60px;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
@@ -67,6 +68,7 @@
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+    margin: 0 auto;
   }
 
   @include vp-374 {

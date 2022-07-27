@@ -45,6 +45,10 @@
 
 .contacts__text {
   width: 500px;
+
+  @include vp-1023 {
+    width: 324px;
+  }
 }
 
 .contacts__text p {
@@ -83,6 +87,6 @@
   margin-bottom: 20px;
 
   @include vp-1023 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }

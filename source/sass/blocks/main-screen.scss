@@ -62,7 +62,7 @@
   @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 29px;
+    margin-bottom: 13px;
   }
 
   @include vp-374 {
@@ -80,6 +80,7 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @include vp-1023 {
+    margin-bottom: 6px;
     font-size: 18px;
     line-height: 22px;
   }
