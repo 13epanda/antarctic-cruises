@@ -59,6 +59,7 @@
 
 .journey__img img {
   object-fit: cover;
+  background-color: $color-grey-nurse;
 
   @include vp-1023 {
     width: 324px;

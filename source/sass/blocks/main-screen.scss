@@ -25,6 +25,7 @@
 .main-screen__bg img {
   width: 100%;
   height: 650px;
+  background-color: $color-grey-nurse;
 
   @include vp-1023 {
     height: 638px;
