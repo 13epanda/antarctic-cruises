@@ -1865,7 +1865,12 @@ button,
     width: 100%;
   }
 
+  .journey {
+    padding-top: 57px;
+  }
+
   .journey__wrapper {
+    row-gap: 23px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1886,10 +1891,21 @@ button,
 
   .advantages__item {
     width: 100%;
+    padding-bottom: 18px;
+  }
+
+  .advantages__item h3 {
+    max-width: 190px;
+    width: 100%;
   }
 
   .cruise__item {
     width: 100%;
+  }
+
+  .cruise__item h3 {
+    bottom: 18px;
+    left: 23px;
   }
 
   .booking__form {
@@ -1910,6 +1926,14 @@ button,
   .contacts__map {
     width: 100%;
     height: 316px;
+  }
+
+  .contacts__text {
+    width: 100%;
+  }
+
+  .contacts__text p {
+    margin-bottom: 27px;
   }
 }
 
@@ -2034,7 +2058,7 @@ button,
   .main-screen__content h1 {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .main-screen__content p {
@@ -2043,59 +2067,68 @@ button,
   }
 
   .journey__content h2 {
+    width: 100%;
+    max-width: 190px;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 34px;
   }
 
   .advantages {
-    padding-top: 65px;
+    padding-top: 40px;
     padding-bottom: 65px;
   }
 
   .advantages h2 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 24px;
     line-height: 36px;
   }
 
   .cruise {
-    padding-top: 65px;
+    padding-top: 40px;
     padding-bottom: 65px;
   }
 
   .cruise h2 {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-size: 24px;
     line-height: 36px;
   }
 
   .booking__wrapper {
-    padding-top: 65px;
+    row-gap: 35px;
+    padding-top: 60px;
     padding-bottom: 65px;
   }
 
   .booking h2 {
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 31px;
   }
 
   .booking__title p {
     width: 100%;
+    max-width: 275px;
     font-size: 16px;
     line-height: 22px;
   }
 
   .booking__form {
-    padding: 40px 30px;
+    padding: 35px 30px;
   }
 
   .booking__form p {
+    max-width: 214px;
+    width: 100%;
+    margin: 0 auto 22px;
     text-align: center;
   }
 
   .contacts {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 50px;
+    padding-bottom: 28px;
   }
 
   .footer {
@@ -2113,7 +2146,8 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 22px;
+    padding: 0;
   }
 
   .footer__logo svg {
@@ -2129,10 +2163,11 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    row-gap: 23px;
+    row-gap: 8px;
   }
 
   .footer__social {
+    margin-top: -7px;
     margin-left: 0;
   }
 }

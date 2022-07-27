@@ -9,7 +9,7 @@
   }
 
   @include vp-374 {
-    padding-top: 65px;
+    padding-top: 40px;
     padding-bottom: 65px;
   }
 }
@@ -29,7 +29,7 @@
   }
 
   @include vp-374 {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -83,6 +83,11 @@
   @include vp-1023 {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @include vp-767 {
+    bottom: 18px;
+    left: 23px;
   }
 }
 

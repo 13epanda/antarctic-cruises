@@ -6,6 +6,10 @@
     padding-top: 90px;
     padding-bottom: 90px;
   }
+
+  @include vp-767 {
+    padding-top: 57px;
+  }
 }
 
 .journey__wrapper {
@@ -19,6 +23,7 @@
   }
 
   @include vp-767 {
+    row-gap: 23px;
     flex-direction: column;
     align-items: stretch;
   }
@@ -55,6 +60,9 @@
   }
 
   @include vp-374 {
+    width: 100%;
+    max-width: 190px;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 34px;
   }
