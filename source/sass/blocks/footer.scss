@@ -1,15 +1,25 @@
 .footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  column-gap: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $color-tangaroa;
 
   @include vp-1023 {
-    column-gap: 25px;
     padding: 50px 0;
+  }
+
+  @include vp-374 {
+    padding: 40px 15px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 40px;
+
+  @include vp-1023 {
+    column-gap: 25px;
   }
 
   @include vp-374 {
@@ -17,7 +27,6 @@
     align-items: flex-start;
     justify-content: space-between;
     row-gap: 30px;
-    padding: 40px 15px;
   }
 }
 
