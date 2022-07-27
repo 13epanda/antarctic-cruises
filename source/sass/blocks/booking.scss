@@ -1,5 +1,6 @@
 .booking {
   position: relative;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .booking img {
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 41px;
+  padding: 50px 60px;
 
   @include vp-1023 {
     flex-direction: column;
@@ -36,7 +37,7 @@
 
 .booking h2 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -77,7 +78,7 @@
 
 .booking__form {
   width: 403px;
-  padding: 50px;
+  padding: 43px 50px;
   color: $color-alice-blue;
   background-color: $color-tangaroa;
 
@@ -91,7 +92,7 @@
 }
 
 .booking__form p {
-  margin: 0 0 35px;
+  margin: 0 0 27px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;

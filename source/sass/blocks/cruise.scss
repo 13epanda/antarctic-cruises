@@ -1,5 +1,5 @@
 .cruise {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 120px;
   font-family: "Montserrat", "Arial", sans-serif;
 
@@ -16,7 +16,7 @@
 
 .cruise h2 {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -38,7 +38,7 @@
 .cruise__list {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
   column-gap: 30px;
@@ -46,6 +46,8 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .cruise__item {
@@ -69,8 +71,8 @@
 .cruise__item h3 {
   position: absolute;
   top: auto;
-  bottom: 35px;
-  left: 25px;
+  bottom: 25px;
+  left: 32px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;

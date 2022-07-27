@@ -19,7 +19,8 @@
 }
 
 .journey__content {
-  margin-right: 88px;
+  margin-right: 20px;
+  padding-right: 68px;
   width: 50%;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $color-tangaroa;
@@ -34,7 +35,7 @@
 }
 
 .journey__content h2 {
-  margin: 0 0 40px 0;
+  margin: 0 0 22px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -58,6 +59,8 @@
 }
 
 .journey__img img {
+  height: 301px;
+  width: auto;
   object-fit: cover;
   background-color: $color-grey-nurse;
 
