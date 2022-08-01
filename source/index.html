@@ -360,14 +360,14 @@
             <label class="visually-hidden" for="e-mail">E-mail</label>
             <input id="e-mail" type="email" name="email" placeholder="E-mail" title="Используйте формат: name@mail.domen" required>
           </div>
-          <div class="booking__input input-radio">
-              <span>
-                <svg width="18" height="18">
-                  <use xlink:href="img/sprite_auto.svg#checkmarks"></use>
-                </svg>
-              </span>
-            <input id="privacy" type="radio" required>
-            <label for="e-mail">Я согласен на обработку моих персональных данных</label>
+          <div class="booking__input input-checkbox">
+            <input id="privacy" type="checkbox" required>
+            <span>
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite_auto.svg#checkmarks"></use>
+              </svg>
+            </span>
+            <label for="privacy">Я согласен на обработку моих персональных данных</label>
           </div>
           <button class="btn button-primary booking__button" type="submit">
             <span>Оставить заявку</span>

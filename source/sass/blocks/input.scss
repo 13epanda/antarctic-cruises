@@ -30,14 +30,15 @@
   outline: 5px solid $color-neon-blue;
 }
 
-/* RADIO */
+/* CHECKBOX */
 
-.input-radio {
+.input-checkbox {
   display: flex;
   align-items: center;
 }
 
-.input-radio input {
+.input-checkbox input {
+  position: relative;
   flex-shrink: 0;
   width: 18px;
   height: 18px;
@@ -45,9 +46,10 @@
   border: none;
   box-sizing: border-box;
   opacity: 0;
+  z-index: 1;
 }
 
-.input-radio span {
+.input-checkbox span {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -56,12 +58,8 @@
   background-color: $color-alice-blue;
 }
 
-.input-radio input ~ span svg {
+.input-checkbox svg {
   display: none;
-}
-
-.input-radio input:checked ~ span svg {
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,19 +69,23 @@
   content: "";
 }
 
-.input-radio label {
+.input-checkbox input:checked ~ span svg {
+  display: block;
+}
+
+.input-checkbox label {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: $color-alice-blue;
 }
 
-.input-radio input:hover ~ .input-radio span,
-.input-radio input:focus ~ .input-radio span {
+.input-checkbox input:hover ~ span,
+.input-checkbox input:focus ~ span {
   outline: 5px solid $color-neon-blue;
 }
 
-.input-radio__input:disabled,
-.input-radio__input:disabled ~ .input-radio label {
+.input-checkbox input:disabled ~ span,
+.input-checkbox input:disabled ~ label {
   opacity: 0.3;
 }
