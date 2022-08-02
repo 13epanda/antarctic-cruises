@@ -1,5 +1,3 @@
-import ymaps from 'ymaps';
-
 const map = () => ymaps.ready(() => {
   let myMap = new ymaps.Map('map', {
     center: [59.938635, 30.323118],
