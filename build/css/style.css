@@ -746,6 +746,7 @@ button,
 /* CHECKBOX */
 
 .input-checkbox {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,7 +783,7 @@ button,
   display: none;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 9px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -791,7 +792,7 @@ button,
   content: "";
 }
 
-.input-checkbox input:checked ~ span svg {
+.input-checkbox input:checked ~ svg {
   display: block;
 }
 
