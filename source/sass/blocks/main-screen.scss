@@ -36,6 +36,7 @@
 .main-screen__bg img {
   width: 100%;
   height: 650px;
+  object-fit: cover;
 
   @include vp-1023 {
     height: 638px;

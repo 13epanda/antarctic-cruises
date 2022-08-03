@@ -1082,6 +1082,8 @@ button,
 .main-screen__bg img {
   width: 100%;
   height: 650px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .main-screen__content {
