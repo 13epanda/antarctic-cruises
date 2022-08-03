@@ -453,6 +453,16 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 
@@ -651,7 +661,7 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 10px 0;
+  margin: 0;
   padding: 10px 20px;
   color: #ffffff;
   background-color: #2c39f2;
@@ -683,6 +693,12 @@ button,
   line-height: 21px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #99cccc;
+  outline: 1px solid #011c40;
 }
 
 /* TEXT */
@@ -718,6 +734,11 @@ button,
   box-sizing: border-box;
 }
 
+.input-text input:hover,
+.input-text input:focus {
+  outline: 5px solid #3366cc;
+}
+
 .input-text input::-webkit-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
@@ -738,11 +759,6 @@ button,
   color: rgba(1, 28, 64, 0.7);
 }
 
-.input-text input:hover,
-.input-text input:focus {
-  outline: 5px solid #2c39f2;
-}
-
 /* CHECKBOX */
 
 .input-checkbox {
@@ -761,7 +777,7 @@ button,
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -805,7 +821,7 @@ button,
 
 .input-checkbox input:hover ~ span,
 .input-checkbox input:focus ~ span {
-  outline: 5px solid #2c39f2;
+  outline: 5px solid #3366cc;
 }
 
 .input-checkbox input:disabled ~ span,
@@ -971,6 +987,12 @@ button,
   display: none;
 }
 
+.header__toggle:hover,
+.header__toggle:focus {
+  background-color: #99cccc;
+  border-radius: 4px;
+}
+
 .header__menu-closed {
   display: none;
 }
@@ -1031,6 +1053,11 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: #3366cc;
 }
 
 .main-screen {
@@ -1137,8 +1164,6 @@ button,
   margin-top: 10px;
   height: 301px;
   width: 50%;
-  max-width: 50%;
-  min-width: 290px;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #d0d1ca;
@@ -1283,8 +1308,8 @@ button,
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .cruise__item {
@@ -1301,7 +1326,7 @@ button,
   position: absolute;
   top: auto;
   bottom: 25px;
-  left: 32px;
+  left: 30px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -1311,7 +1336,7 @@ button,
 
 .cruise__preview {
   width: 100%;
-  height: 100%;
+  height: 386px;
   background-color: #3366cc;
   text-indent: -100vw;
 }
@@ -1341,23 +1366,26 @@ button,
 }
 
 .cruise__content dd {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   margin-left: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.cruise__item:hover .cruise__preview {
+.cruise__item:hover .cruise__preview,
+.cruise__item:focus .cruise__preview {
   display: none;
 }
 
-.cruise__item:hover h3 {
-  top: 35px;
+.cruise__item:hover h3,
+.cruise__item:focus h3 {
+  top: 30px;
   bottom: auto;
 }
 
-.cruise__item:hover .cruise__content {
+.cruise__item:hover .cruise__content,
+.cruise__item:focus .cruise__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1412,7 +1440,7 @@ button,
 }
 
 .booking__title {
-  text-align: center;
+  text-align: left;
   color: #011c40;
 }
 
@@ -1449,6 +1477,10 @@ button,
 
 .booking__input {
   margin: 0 0 20px;
+}
+
+.booking__button {
+  margin-top: 5px;
 }
 
 .contacts {
@@ -1506,8 +1538,19 @@ button,
   column-gap: 10px;
 }
 
+.contacts__address svg,
+.contacts__phone svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.contacts__address svg {
+  margin-top: 5px;
+}
+
 .contacts__phone:hover,
 .contacts__phone:focus {
+  text-decoration: underline;
   color: #2c39f2;
 }
 
@@ -1592,7 +1635,7 @@ button,
 
 .footer__link:hover,
 .footer__link:focus {
-  text-decoration: underline;
+  color: #3366cc;
 }
 
 .footer__social {
@@ -1605,8 +1648,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-column-gap: 7px;
   -moz-column-gap: 7px;
   column-gap: 7px;
@@ -1628,7 +1671,7 @@ button,
 
 .footer__link-social:hover,
 .footer__link-social:focus {
-  outline: 1px solid #f9fbfd;
+  background-color: #3366cc;
   border-radius: 4px;
 }
 
@@ -1708,7 +1751,7 @@ button,
 
   .journey {
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
   }
 
   .journey__wrapper {
@@ -1797,18 +1840,20 @@ button,
     padding: 87px 0 100px;
   }
 
+  .booking__title {
+    text-align: center;
+  }
+
   .booking h2 {
     margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
-    text-align: center;
   }
 
   .booking__title p {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    text-align: center;
     margin: 0 auto;
   }
 
@@ -1827,7 +1872,7 @@ button,
   }
 
   .contacts__address p {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .footer {
@@ -1857,9 +1902,9 @@ button,
   }
 
   .footer__social {
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
+    -webkit-column-gap: 7px;
+    -moz-column-gap: 7px;
+    column-gap: 7px;
   }
 
   .footer__facebook {
@@ -1883,6 +1928,12 @@ button,
     padding: 0 15px;
   }
 
+  .input-checkbox {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1894,6 +1945,12 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .main-screen__content h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
   }
 
   .journey {
@@ -1919,12 +1976,27 @@ button,
     width: 100%;
     max-width: 100%;
     height: auto;
-    min-height: 186px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 31px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .advantages__item {
     width: 100%;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
+  }
+
+  .advantages__icon-two-checkmarks {
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+
+  .advantages__icon-zodiac {
+    margin-top: 8px;
+    margin-bottom: 20px;
   }
 
   .advantages__item h3 {
@@ -1934,11 +2006,18 @@ button,
 
   .cruise__item {
     width: 100%;
+    height: auto;
   }
 
   .cruise__item h3 {
     bottom: 18px;
-    left: 23px;
+    left: 25px;
+  }
+
+  .booking__wrapper {
+    row-gap: 35px;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   .booking__form {
@@ -2006,7 +2085,8 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     row-gap: 43px;
-    width: 285px;
+    max-width: 285px;
+    width: 100%;
     height: 100vh;
     margin-left: auto;
     margin-right: -15px;
@@ -2029,7 +2109,7 @@ button,
     height: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding: 20px 15px;
+    padding: 20px 0;
     background-color: transparent;
   }
 
@@ -2092,13 +2172,8 @@ button,
     height: 500px;
   }
 
-  .main-screen__content h1 {
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 10px;
-  }
-
   .main-screen__content p {
+    max-width: 200px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -2112,14 +2187,8 @@ button,
   }
 
   .advantages {
-    padding-top: 40px;
+    padding-top: 36px;
     padding-bottom: 65px;
-  }
-
-  .advantages h2 {
-    margin-bottom: 35px;
-    font-size: 24px;
-    line-height: 36px;
   }
 
   .cruise {
@@ -2128,19 +2197,18 @@ button,
   }
 
   .cruise h2 {
-    margin-bottom: 32px;
+    margin-top: 18px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
   }
 
-  .booking__wrapper {
-    row-gap: 35px;
-    padding-top: 60px;
-    padding-bottom: 65px;
+  .cruise__content {
+    padding-top: 70px;
   }
 
   .booking h2 {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -2159,12 +2227,13 @@ button,
   .booking__form p {
     max-width: 214px;
     width: 100%;
-    margin: 0 auto 22px;
+    margin: 0 auto 30px;
     text-align: center;
+    line-height: 24px;
   }
 
   .contacts {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 28px;
   }
 
@@ -2205,6 +2274,6 @@ button,
 
   .footer__social {
     margin-top: -7px;
-    margin-left: 0;
+    margin-left: -8px;
   }
 }

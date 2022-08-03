@@ -29,7 +29,8 @@
   }
 
   @include vp-374 {
-    margin-bottom: 32px;
+    margin-top: 18px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -46,8 +47,8 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .cruise__item {
@@ -74,7 +75,7 @@
   position: absolute;
   top: auto;
   bottom: 25px;
-  left: 32px;
+  left: 30px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -88,13 +89,13 @@
 
   @include vp-767 {
     bottom: 18px;
-    left: 23px;
+    left: 25px;
   }
 }
 
 .cruise__preview {
   width: 100%;
-  height: 100%;
+  height: 386px;
   background-color: $color-royal-blue;
   text-indent: -100vw;
 }
@@ -112,7 +113,7 @@
   padding: 73px 25px 35px 25px;
 
   @include vp-374 {
-    padding-top: 95px;
+    padding-top: 70px;
   }
 }
 
@@ -127,7 +128,7 @@
 }
 
 .cruise__content dd {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   margin-left: 0;
   font-weight: 400;
   font-size: 14px;
@@ -141,7 +142,7 @@
 
 .cruise__item:hover h3,
 .cruise__item:focus h3 {
-  top: 35px;
+  top: 30px;
   bottom: auto;
 }
 

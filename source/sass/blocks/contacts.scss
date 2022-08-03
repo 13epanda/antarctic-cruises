@@ -10,7 +10,7 @@
   }
 
   @include vp-374 {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 28px;
   }
 }
@@ -75,8 +75,18 @@
   column-gap: 10px;
 }
 
+.contacts__address svg,
+.contacts__phone svg {
+  flex-shrink: 0;
+}
+
+.contacts__address svg {
+  margin-top: 5px;
+}
+
 .contacts__phone:hover,
 .contacts__phone:focus {
+  text-decoration: underline;
   color: $color-neon-blue;
 }
 
@@ -95,6 +105,6 @@
   margin-bottom: 20px;
 
   @include vp-1023 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }

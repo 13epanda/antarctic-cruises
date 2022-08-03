@@ -19,15 +19,15 @@
   color: $color-tangaroa;
   border: none;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    outline: 5px solid $color-royal-blue;
+  }
 }
 
 .input-text input::placeholder {
   color: $color-tangaroa-transparency;
-}
-
-.input-text input:hover,
-.input-text input:focus {
-  outline: 5px solid $color-neon-blue;
 }
 
 /* CHECKBOX */
@@ -36,6 +36,10 @@
   position: relative;
   display: flex;
   align-items: center;
+
+  @include vp-767 {
+    align-items: flex-start;
+  }
 }
 
 .input-checkbox input {
@@ -43,7 +47,7 @@
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
   border: none;
   box-sizing: border-box;
   opacity: 0;
@@ -83,7 +87,7 @@
 
 .input-checkbox input:hover ~ span,
 .input-checkbox input:focus ~ span {
-  outline: 5px solid $color-neon-blue;
+  outline: 5px solid $color-royal-blue;
 }
 
 .input-checkbox input:disabled ~ span,
