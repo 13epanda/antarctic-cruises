@@ -15,14 +15,20 @@
   }
 }
 
-.advantages img {
+.advantages__img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: $color-morning-glory;
+  text-indent: -100vw;
+}
+
+.advantages__img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  background-color: $color-grey-nurse;
 }
 
 .advantages h2 {

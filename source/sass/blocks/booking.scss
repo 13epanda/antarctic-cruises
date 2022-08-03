@@ -3,12 +3,18 @@
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
-.booking img {
+.booking__img {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: $color-morning-glory;
+  text-indent: -100vw;
+}
+
+.booking__img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  background-color: $color-grey-nurse;
 }
 
 .booking__wrapper {

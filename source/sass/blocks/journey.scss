@@ -75,12 +75,15 @@
   line-height: 24px;
 }
 
-.journey__img img {
+.journey__img {
   margin-top: 10px;
   height: 301px;
-  width: auto;
+  width: 50%;
+  max-width: 50%;
+  min-width: 290px;
   object-fit: cover;
   background-color: $color-grey-nurse;
+  text-indent: -100vw;
 
   @include vp-1023 {
     width: 324px;
@@ -89,6 +92,14 @@
 
   @include vp-767 {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    min-height: 100px;
   }
+}
+
+.journey__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

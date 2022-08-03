@@ -1047,12 +1047,14 @@ button,
   left: 0;
   display: block;
   width: 100%;
+  height: 650px;
+  background-color: #3366cc;
+  text-indent: -100vw;
 }
 
 .main-screen__bg img {
   width: 100%;
   height: 650px;
-  background-color: #d0d1ca;
 }
 
 .main-screen__content {
@@ -1131,13 +1133,23 @@ button,
   line-height: 24px;
 }
 
-.journey__img img {
+.journey__img {
   margin-top: 10px;
   height: 301px;
-  width: auto;
+  width: 50%;
+  max-width: 50%;
+  min-width: 290px;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #d0d1ca;
+  text-indent: -100vw;
+}
+
+.journey__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .advantages {
@@ -1147,15 +1159,21 @@ button,
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
-.advantages img {
+.advantages__img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #99cccc;
+  text-indent: -100vw;
+}
+
+.advantages__img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #d0d1ca;
 }
 
 .advantages h2 {
@@ -1294,7 +1312,8 @@ button,
 .cruise__preview {
   width: 100%;
   height: 100%;
-  background-color: #2c39f2;
+  background-color: #3366cc;
+  text-indent: -100vw;
 }
 
 .cruise__preview img {
@@ -1302,7 +1321,6 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #d0d1ca;
 }
 
 .cruise__content {
@@ -1364,13 +1382,19 @@ button,
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
-.booking img {
+.booking__img {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #99cccc;
+  text-indent: -100vw;
+}
+
+.booking__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #d0d1ca;
 }
 
 .booking__wrapper {
@@ -1658,6 +1682,10 @@ button,
     height: 638px;
   }
 
+  .main-screen__bg {
+    height: 638px;
+  }
+
   .main-screen__bg img {
     height: 638px;
   }
@@ -1702,7 +1730,7 @@ button,
     margin-bottom: 17px;
   }
 
-  .journey__img img {
+  .journey__img {
     width: 324px;
     height: 264px;
   }
@@ -1887,9 +1915,11 @@ button,
     width: 100%;
   }
 
-  .journey__img img {
+  .journey__img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    min-height: 186px;
   }
 
   .advantages__item {
@@ -2051,6 +2081,10 @@ button,
   }
 
   .main-screen {
+    height: 500px;
+  }
+
+  .main-screen__bg {
     height: 500px;
   }
 
