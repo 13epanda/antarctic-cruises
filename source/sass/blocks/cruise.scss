@@ -66,6 +66,7 @@
 
   @include vp-767 {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -109,6 +110,10 @@
   height: 100%;
   display: none;
   padding: 73px 25px 35px 25px;
+
+  @include vp-374 {
+    padding-top: 95px;
+  }
 }
 
 .cruise__content dl {
@@ -129,16 +134,19 @@
   line-height: 20px;
 }
 
-.cruise__item:hover .cruise__preview {
+.cruise__item:hover .cruise__preview,
+.cruise__item:focus .cruise__preview {
   display: none;
 }
 
-.cruise__item:hover h3 {
+.cruise__item:hover h3,
+.cruise__item:focus h3 {
   top: 35px;
   bottom: auto;
 }
 
-.cruise__item:hover .cruise__content {
+.cruise__item:hover .cruise__content,
+.cruise__item:focus .cruise__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -42,3 +42,9 @@
     color: $color-tangaroa;
   }
 }
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: $color-morning-glory;
+  outline: 1px solid $color-tangaroa;
+}
