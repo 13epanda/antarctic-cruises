@@ -31,7 +31,7 @@
 
 .journey__content {
   margin-right: 20px;
-  padding-right: 68px;
+  padding-right: 50px;
   width: 50%;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $color-tangaroa;
@@ -76,15 +76,17 @@
 }
 
 .journey__img {
-  margin-top: 10px;
   height: 301px;
   width: 50%;
+  margin-left: 15px;
   object-fit: cover;
   background-color: $color-grey-nurse;
   text-indent: -100vw;
 
   @include vp-1023 {
-    width: 324px;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 337px;
     height: 264px;
   }
 

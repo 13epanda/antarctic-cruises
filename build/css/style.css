@@ -777,7 +777,7 @@ button,
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1140,7 +1140,7 @@ button,
 
 .journey__content {
   margin-right: 20px;
-  padding-right: 68px;
+  padding-right: 50px;
   width: 50%;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
@@ -1161,9 +1161,9 @@ button,
 }
 
 .journey__img {
-  margin-top: 10px;
   height: 301px;
   width: 50%;
+  margin-left: 15px;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #d0d1ca;
@@ -1242,15 +1242,19 @@ button,
 }
 
 .advantages__icon-ship {
-  margin-bottom: 18px;
+  margin-top: 2px;
+  margin-left: -3px;
+  margin-bottom: 16px;
 }
 
 .advantages__icon-two-checkmarks {
-  margin-bottom: 24px;
+  margin-top: 5px;
+  margin-bottom: 18px;
 }
 
 .advantages__icon-zodiac {
-  margin-bottom: 27px;
+  margin-top: 5px;
+  margin-bottom: 24px;
 }
 
 .advantages__item h3 {
@@ -1352,7 +1356,7 @@ button,
   position: relative;
   height: 100%;
   display: none;
-  padding: 73px 25px 35px 25px;
+  padding: 66px 25px 35px 25px;
 }
 
 .cruise__content dl {
@@ -1380,7 +1384,8 @@ button,
 
 .cruise__item:hover h3,
 .cruise__item:focus h3 {
-  top: 30px;
+  top: 28px;
+  left: 26px;
   bottom: auto;
 }
 
@@ -1462,7 +1467,7 @@ button,
 
 .booking__form {
   width: 403px;
-  padding: 43px 50px;
+  padding: 43px 50px 50px 50px;
   color: #f9fbfd;
   background-color: #011c40;
 }
@@ -1480,12 +1485,12 @@ button,
 }
 
 .booking__button {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .contacts {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 122px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
 }
@@ -1515,8 +1520,7 @@ button,
 }
 
 .contacts__text p {
-  margin-top: 0;
-  margin-bottom: 33px;
+  margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1538,14 +1542,18 @@ button,
   column-gap: 10px;
 }
 
+.contacts__address {
+  margin-top: 27px;
+}
+
+.contacts__phone {
+  margin-top: 20px;
+}
+
 .contacts__address svg,
 .contacts__phone svg {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.contacts__address svg {
-  margin-top: 5px;
 }
 
 .contacts__phone:hover,
@@ -1562,11 +1570,6 @@ button,
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-}
-
-.contacts__address p {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .footer {
@@ -1774,16 +1777,19 @@ button,
   }
 
   .journey__img {
-    width: 324px;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 337px;
     height: 264px;
   }
 
   .advantages {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 97px;
   }
 
   .advantages h2 {
+    margin-top: 18px;
     font-size: 26px;
     line-height: 39px;
   }
@@ -1801,16 +1807,21 @@ button,
   .advantages__icon-two-checkmarks {
     width: 33px;
     height: 19px;
-    margin-bottom: 22px;
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-bottom: 16px;
   }
 
   .advantages__icon-zodiac {
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-bottom: 20px;
     width: 38px;
     height: 13px;
   }
 
   .cruise {
-    padding-top: 65px;
+    padding-top: 67px;
     padding-bottom: 100px;
   }
 
@@ -1825,8 +1836,21 @@ button,
   }
 
   .cruise__item h3 {
+    left: 37px;
+    bottom: 29px;
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .cruise__content {
+    padding-top: 68px;
+    padding-left: 33px;
+    padding-right: 36px;
+  }
+
+  .cruise__item:hover h3,
+  .cruise__item:focus h3 {
+    left: 33px;
   }
 
   .booking__wrapper {
@@ -1857,9 +1881,14 @@ button,
     margin: 0 auto;
   }
 
+  .booking__form {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+
   .contacts {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   .contacts__map {
@@ -1871,8 +1900,8 @@ button,
     width: 324px;
   }
 
-  .contacts__address p {
-    margin-bottom: 24px;
+  .contacts__address svg {
+    margin-top: 5px;
   }
 
   .footer {
@@ -1891,6 +1920,7 @@ button,
   }
 
   .footer__menu {
+    margin-top: -4px;
     -webkit-column-gap: 23px;
     -moz-column-gap: 23px;
     column-gap: 23px;
@@ -1902,6 +1932,7 @@ button,
   }
 
   .footer__social {
+    margin-right: -8px;
     -webkit-column-gap: 7px;
     -moz-column-gap: 7px;
     column-gap: 7px;
@@ -1932,6 +1963,10 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .input-checkbox input {
+    margin-right: 10px;
   }
 
   .modal__wrapper {
@@ -2014,14 +2049,29 @@ button,
     left: 25px;
   }
 
+  .cruise__item:hover h3,
+  .cruise__item:focus h3 {
+    left: 25px;
+  }
+
   .booking__wrapper {
     row-gap: 35px;
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 
   .booking__form {
     width: 100%;
+    padding: 35px 30px 40px 30px;
+  }
+
+  .booking__button {
+    margin-top: 4px;
+  }
+
+  .contacts {
+    padding-top: 57px;
+    padding-bottom: 61px;
   }
 
   .contacts__wrapper {
@@ -2042,10 +2092,6 @@ button,
 
   .contacts__text {
     width: 100%;
-  }
-
-  .contacts__text p {
-    margin-bottom: 27px;
   }
 }
 
@@ -2187,7 +2233,7 @@ button,
   }
 
   .advantages {
-    padding-top: 36px;
+    padding-top: 38px;
     padding-bottom: 65px;
   }
 
@@ -2204,7 +2250,7 @@ button,
   }
 
   .cruise__content {
-    padding-top: 70px;
+    padding: 70px 25px 35px;
   }
 
   .booking h2 {
@@ -2220,21 +2266,12 @@ button,
     line-height: 22px;
   }
 
-  .booking__form {
-    padding: 35px 30px;
-  }
-
   .booking__form p {
     max-width: 214px;
     width: 100%;
     margin: 0 auto 30px;
     text-align: center;
     line-height: 24px;
-  }
-
-  .contacts {
-    padding-top: 60px;
-    padding-bottom: 28px;
   }
 
   .footer {
@@ -2262,6 +2299,7 @@ button,
   }
 
   .footer__menu {
+    margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2274,6 +2312,7 @@ button,
 
   .footer__social {
     margin-top: -7px;
+    margin-right: 0;
     margin-left: -8px;
   }
 }
