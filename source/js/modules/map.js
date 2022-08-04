@@ -1,4 +1,4 @@
-const map = () => ymaps.ready(() => {
+const getYaMap = () => ymaps.ready(() => {
   let myMap = new ymaps.Map('map', {
     center: [59.938635, 30.323118],
     zoom: 15,
@@ -22,4 +22,4 @@ const map = () => ymaps.ready(() => {
   myMap.geoObjects.add(myPlacemark);
 });
 
-export {map};
+export {getYaMap};
