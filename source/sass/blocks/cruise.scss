@@ -54,8 +54,7 @@
 .cruise__item {
   position: relative;
   width: 260px;
-  height: auto;
-  min-height: 386px;
+  height: 386px;
   list-style-type: none;
   color: $color-alice-blue;
   cursor: pointer;
@@ -97,7 +96,7 @@
 
 .cruise__preview {
   width: 100%;
-  height: 386px;
+  height: 100%;
   background-color: $color-royal-blue;
   text-indent: -100vw;
 }
@@ -126,7 +125,8 @@
 }
 
 .cruise__content dl {
-  margin: 0;
+  margin: 0 0 10px 0;
+  overflow-y: auto;
 }
 
 .cruise__content dt {

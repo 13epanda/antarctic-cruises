@@ -15,7 +15,7 @@
 .footer__wrapper {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 40px;
 
   @include vp-1023 {
@@ -98,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   column-gap: 7px;
   padding-inline-start: 0;
   margin-block-start: 0;

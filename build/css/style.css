@@ -1136,12 +1136,13 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .journey__content {
+  margin-top: 56px;
   margin-right: 20px;
   padding-right: 50px;
   width: 50%;
@@ -1219,15 +1220,17 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 30px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
   -webkit-margin-before: 0;
@@ -1237,7 +1240,8 @@ button,
 }
 
 .advantages__item {
-  width: 31%;
+  max-width: 360px;
+  min-width: 206px;
   height: auto;
   padding: 30px 30px 25px;
   background-color: #f9fbfd;
@@ -1322,8 +1326,7 @@ button,
 .cruise__item {
   position: relative;
   width: 260px;
-  height: auto;
-  min-height: 386px;
+  height: 386px;
   list-style-type: none;
   color: #f9fbfd;
   cursor: pointer;
@@ -1343,7 +1346,7 @@ button,
 
 .cruise__preview {
   width: 100%;
-  height: 386px;
+  height: 100%;
   background-color: #3366cc;
   text-indent: -100vw;
 }
@@ -1363,7 +1366,8 @@ button,
 }
 
 .cruise__content dl {
-  margin: 0;
+  margin: 0 0 10px 0;
+  overflow-y: auto;
 }
 
 .cruise__content dt {
@@ -1588,9 +1592,9 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -1654,8 +1658,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-column-gap: 7px;
   -moz-column-gap: 7px;
   column-gap: 7px;
@@ -1768,6 +1772,7 @@ button,
   }
 
   .journey__content {
+    margin-top: 0;
     margin-right: 30px;
     padding-right: 0;
   }
@@ -1797,7 +1802,14 @@ button,
     line-height: 39px;
   }
 
+  .advantages__list {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
   .advantages__item {
+    max-width: 206px;
     padding: 25px 16px 25px 20px;
   }
 
@@ -2135,6 +2147,7 @@ button,
 
   .advantages__item {
     width: 100%;
+    max-width: none;
     padding-bottom: 20px;
   }
 
