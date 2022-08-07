@@ -68,9 +68,12 @@
     <div class="main-screen__bg">
       <!-- 1х: 1366px; 2x: 2732px -->
       <picture>
-        <source media="(max-width: 768px)" srcset="img/mobile/header-bg.webp 1x, img/mobile/header-bg@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/header-bg.webp 1x, img/mobile/header-bg@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1024px)" srcset="img/tablet/header-bg.webp 1x, img/tablet/header-bg@2x.webp 2x">
         <source type="image/webp" srcset="img/header-bg.webp 1x, img/header-bg@2x.webp 2x">
-        <img src="img/header-bg.jpg" srcset="img/header-bg@2x.jpg 2x" width="1366" height="650" alt="Заснеженные горы, отражающиеся в воде.">
+
+        <source media="(max-width: 1024px)" srcset="img/tablet/header-bg.jpg 1x, img/tablet/header-bg@2x.jpg 2x">
+        <img src="img/tablet/header-bg.jpg" srcset="img/header-bg@2x.jpg 2x" width="1366" height="650" alt="Заснеженные горы, отражающиеся в воде.">
       </picture>
     </div>
     <div class="main-screen__content">

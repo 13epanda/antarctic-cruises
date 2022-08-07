@@ -68,9 +68,12 @@
     <div class="main-screen__bg">
       <!-- 1х: 1366px; 2x: 2732px -->
       <picture>
-        <source media="(max-width: 768px)" srcset="img/mobile/header-bg.webp 1x, img/mobile/header-bg@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/header-bg.webp 1x, img/mobile/header-bg@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1024px)" srcset="img/tablet/header-bg.webp 1x, img/tablet/header-bg@2x.webp 2x">
         <source type="image/webp" srcset="img/header-bg.webp 1x, img/header-bg@2x.webp 2x">
-        <img src="img/header-bg.jpg" srcset="img/header-bg@2x.jpg 2x" width="1366" height="650" alt="Заснеженные горы, отражающиеся в воде.">
+
+        <source media="(max-width: 1024px)" srcset="img/tablet/header-bg.jpg 1x, img/tablet/header-bg@2x.jpg 2x">
+        <img src="img/tablet/header-bg.jpg" srcset="img/header-bg@2x.jpg 2x" width="1366" height="650" alt="Заснеженные горы, отражающиеся в воде.">
       </picture>
     </div>
     <div class="main-screen__content">
@@ -91,7 +94,7 @@
       <div class="journey__img">
         <!-- 1х: 560px; 2x: 1120px -->
         <picture>
-          <source media="(max-width: 768px)" srcset="img/mobile/penguins.webp 1x, img/mobile/penguins@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/penguins.webp 1x, img/mobile/penguins@2x.webp 2x">
           <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
           <img src="img/penguins.jpg" srcset="img/penguins@2x.jpg 2x" width="560" height="301" alt="Фотография трех пингвинов.">
         </picture>
@@ -103,7 +106,7 @@
       <div class="advantages__img">
         <!-- 1х: 1366px; 2x: 2732px -->
         <picture>
-          <source media="(max-width: 768px)" srcset="img/mobile/advantages-bg.webp 1x, img/mobile/advantages-bg@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/advantages-bg.webp 1x, img/mobile/advantages-bg@2x.webp 2x">
           <source type="image/webp" srcset="img/advantages-bg.webp 1x, img/advantages-bg@2x.webp 2x">
           <img src="img/advantages-bg.jpg" srcset="img/advantages-bg@2x.jpg 2x" width="1366" height="562" alt="Ледяные горы на заднем плане.">
         </picture>
@@ -143,7 +146,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-1.webp 1x, img/mobile/cruise/cruise-bg-1@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-1.webp 1x, img/mobile/cruise/cruise-bg-1@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-1.webp 1x, img/cruise/cruise-bg-1@2x.webp 2x">
               <img src="img/cruise/cruise-bg-1.jpg" srcset="img/cruise/cruise-bg-1@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -169,7 +172,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-4.webp 1x, img/mobile/cruise/cruise-bg-4@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-4.webp 1x, img/mobile/cruise/cruise-bg-4@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-4.webp 1x, img/cruise/cruise-bg-4@2x.webp 2x">
               <img src="img/cruise/cruise-bg-4.jpg" srcset="img/cruise/cruise-bg-4@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -195,7 +198,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-2.webp 1x, img/mobile/cruise/cruise-bg-2@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-2.webp 1x, img/mobile/cruise/cruise-bg-2@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-2.webp, img/cruise/cruise-bg-2@2x.webp 2x">
               <img src="img/cruise/cruise-bg-2.jpg" srcset="img/cruise/cruise-bg-2@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -221,7 +224,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-3.webp 1x, img/mobile/cruise/cruise-bg-3@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-3.webp 1x, img/mobile/cruise/cruise-bg-3@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-3.webp 1x, img/cruise/cruise-bg-3@2x.webp 2x">
               <img src="img/cruise/cruise-bg-3.jpg" srcset="img/cruise/cruise-bg-3@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -247,7 +250,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-4.webp 1x, img/mobile/cruise/cruise-bg-4@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-4.webp 1x, img/mobile/cruise/cruise-bg-4@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-4.webp 1x, img/cruise/cruise-bg-4@2x.webp 2x">
               <img src="img/cruise/cruise-bg-4.jpg" srcset="img/cruise/cruise-bg-4@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -273,7 +276,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-5.webp 1x, img/mobile/cruise/cruise-bg-5@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-5.webp 1x, img/mobile/cruise/cruise-bg-5@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-5.webp 1x, img/cruise/cruise-bg-5@2x.webp 2x">
               <img src="img/cruise/cruise-bg-5.jpg" srcset="img/cruise/cruise-bg-5@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -299,7 +302,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-6.webp 1x, img/mobile/cruise/cruise-bg-6@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-6.webp 1x, img/mobile/cruise/cruise-bg-6@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-6.webp 1x, img/cruise/cruise-bg-6@2x.webp 2x">
               <img src="img/cruise/cruise-bg-6.jpg" srcset="img/cruise/cruise-bg-6@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -325,7 +328,7 @@
           <div class="cruise__preview">
             <!-- 1х: 260px; 2x: 520px -->
             <picture>
-              <source media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-7.webp 1x, img/mobile/cruise/cruise-bg-7@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/cruise/cruise-bg-7.webp 1x, img/mobile/cruise/cruise-bg-7@2x.webp 2x">
               <source type="image/webp" srcset="img/cruise/cruise-bg-7.webp 1x, img/cruise/cruise-bg-7@2x.webp 2x">
               <img src="img/cruise/cruise-bg-7.jpg" srcset="img/cruise/cruise-bg-7@2x.jpg 2x" width="280" height="270" alt="Ледяные горы на заднем плане." loading="lazy">
             </picture>
@@ -353,7 +356,7 @@
     <div class="booking__img">
       <!-- 1х: 1366px; 2x: 2732px -->
       <picture>
-        <source media="(max-width: 768px)" srcset="img/mobile/reservation-bg.webp 1x, img/mobile/reservation-bg@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/reservation-bg.webp 1x, img/mobile/reservation-bg@2x.webp 2x">
         <source type="image/webp" srcset="img/reservation-bg.webp 1x, img/reservation-bg@2x.webp 2x">
         <img src="img/reservation-bg.jpg" srcset="img/reservation-bg@2x.jpg 2x" width="1366" height="555" alt="Фоновая картинка в виде ледников на поверхности воды." loading="lazy">
       </picture>
