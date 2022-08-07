@@ -1017,6 +1017,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 10px;
 }
 
 .header__list {
@@ -1992,6 +1993,7 @@ button,
 
   .journey {
     padding-top: 57px;
+    padding-bottom: 65px;
   }
 
   .journey__wrapper {
@@ -2196,7 +2198,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    row-gap: 28px;
+    row-gap: 26px;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
