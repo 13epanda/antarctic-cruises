@@ -8,7 +8,7 @@
   align-items: center;
   z-index: 1;
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -19,7 +19,7 @@
   display: flex;
   margin-right: 20px;
 
-  @include vp-374 {
+  @include vp-767 {
     margin-right: auto;
   }
 }
@@ -30,7 +30,7 @@
     height: 20px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 42px;
     height: 22px;
     fill: $color-tangaroa;
@@ -51,7 +51,7 @@
     padding-bottom: 20px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -73,7 +73,7 @@
     background-color: transparent;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +89,7 @@
 .header__toggle {
   display: none;
 
-  @include vp-374 {
+  @include vp-767 {
     position: absolute;
     top: 20px;
     right: 10px;
@@ -127,7 +127,7 @@
 }
 
 .header__wrapper--closed .header__list {
-  @include vp-374 {
+  @include vp-767 {
     display: none;
   }
 }
@@ -138,13 +138,13 @@
 }
 
 .header__wrapper--closed .header__menu-opened {
-  @include vp-374 {
+  @include vp-767 {
     display: none;
   }
 }
 
 .header__wrapper--closed .header__menu-closed {
-  @include vp-374 {
+  @include vp-767 {
     display: block;
   }
 }
@@ -163,7 +163,7 @@
     column-gap: 23px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -194,7 +194,7 @@
     line-height: 17px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     font-size: 18px;
     line-height: 22px;
     color: $color-tangaroa;
