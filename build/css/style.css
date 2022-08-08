@@ -1390,19 +1390,22 @@ button,
 }
 
 .cruise__item:hover .cruise__preview,
-.cruise__item:focus .cruise__preview {
+.cruise__item:focus .cruise__preview,
+.cruise__item:focus-within .cruise__preview {
   display: none;
 }
 
 .cruise__item:hover h3,
-.cruise__item:focus h3 {
+.cruise__item:focus h3,
+.cruise__item:focus-within h3 {
   top: 28px;
   left: 26px;
   bottom: auto;
 }
 
 .cruise__item:hover .cruise__content,
-.cruise__item:focus .cruise__content {
+.cruise__item:focus .cruise__content,
+.cruise__item:focus-within .cruise__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1872,7 +1875,8 @@ button,
   }
 
   .cruise__item:hover h3,
-  .cruise__item:focus h3 {
+  .cruise__item:focus h3,
+  .cruise__item:focus-within h3 {
     left: 33px;
   }
 
@@ -2196,7 +2200,8 @@ button,
   }
 
   .cruise__item:hover h3,
-  .cruise__item:focus h3 {
+  .cruise__item:focus h3,
+  .cruise__item:focus-within h3 {
     left: 25px;
   }
 
