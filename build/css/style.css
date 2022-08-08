@@ -1628,6 +1628,7 @@ button,
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
+  margin-top: 6px;
 }
 
 .footer__item {
@@ -1649,12 +1650,13 @@ button,
 }
 
 .footer__social {
+  width: auto;
+  max-width: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1920,7 +1922,7 @@ button,
   }
 
   .footer {
-    padding: 45px 0;
+    padding: 48px 0;
   }
 
   .footer__wrapper {
@@ -2292,7 +2294,7 @@ button,
   }
 
   .footer {
-    padding: 40px 15px;
+    padding: 38px 15px;
   }
 
   .footer__wrapper {
