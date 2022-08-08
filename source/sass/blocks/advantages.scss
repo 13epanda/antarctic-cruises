@@ -6,12 +6,12 @@
 
   @include vp-1023 {
     padding-top: 70px;
-    padding-bottom: 97px;
+    padding-bottom: 100px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     padding-top: 38px;
-    padding-bottom: 65px;
+    padding-bottom: 35px;
   }
 }
 
@@ -68,6 +68,10 @@
   @include vp-1023 {
     column-gap: 30px;
   }
+
+  @include vp-767 {
+    row-gap: 0;
+  }
 }
 
 .advantages__item {
@@ -80,12 +84,13 @@
 
   @include vp-1023 {
     max-width: 206px;
-    padding: 25px 16px 25px 20px;
+    padding: 25px 16px 20px 20px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: none;
+    margin-bottom: 30px;
     padding-bottom: 20px;
   }
 }
