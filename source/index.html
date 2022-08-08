@@ -372,18 +372,18 @@
           <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
           <div class="booking__input input-text">
             <label class="visually-hidden" for="user-name">Имя</label>
-            <input id="user-name" type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" title="Имя не должно быть короче двух букв." required>
+            <input id="user-name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" title="Имя не должно быть короче двух букв." required>
           </div>
           <div class="booking__input input-text">
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input id="phone" type="tel" placeholder="Телефон" pattern="[+]7\d{10}" title="Используйте формат: +7123456789." required>
+            <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="+.\d{11}" title="Используйте формат: 8123456789." required>
           </div>
           <div class="booking__input input-text">
             <label class="visually-hidden" for="e-mail">E-mail</label>
             <input id="e-mail" type="email" name="email" placeholder="E-mail" title="Используйте формат: name@mail.domen" required>
           </div>
           <div class="booking__input input-checkbox">
-            <input id="privacy" type="checkbox" required>
+            <input id="privacy" type="checkbox" name="consent" required>
             <span>
             </span>
             <svg width="18" height="18">
