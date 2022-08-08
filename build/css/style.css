@@ -1063,6 +1063,7 @@ button,
 .header__link:hover,
 .header__link:focus {
   color: #3366cc;
+  outline: none;
 }
 
 .main-screen {
@@ -1571,10 +1572,11 @@ button,
   flex-shrink: 0;
 }
 
-.contacts__phone:hover,
-.contacts__phone:focus {
-  text-decoration: underline;
+.contacts__phone:hover p,
+.contacts__phone:focus p {
+  font-weight: 600;
   color: #2c39f2;
+  outline: none;
 }
 
 .contacts__address p,
@@ -1655,6 +1657,7 @@ button,
 .footer__link:hover,
 .footer__link:focus {
   color: #3366cc;
+  outline: none;
 }
 
 .footer__social {
@@ -1693,6 +1696,7 @@ button,
 .footer__link-social:focus {
   background-color: #3366cc;
   border-radius: 4px;
+  outline: none;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

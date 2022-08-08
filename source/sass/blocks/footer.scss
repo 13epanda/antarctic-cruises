@@ -87,6 +87,7 @@
   &:hover,
   &:focus {
     color: $color-royal-blue;
+    outline: none;
   }
 
   @include vp-1023 {
@@ -128,6 +129,7 @@
   &:focus {
     background-color: $color-royal-blue;
     border-radius: 4px;
+    outline: none;
   }
 }
 

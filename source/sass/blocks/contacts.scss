@@ -89,10 +89,11 @@
   }
 }
 
-.contacts__phone:hover,
-.contacts__phone:focus {
-  text-decoration: underline;
+.contacts__phone:hover p,
+.contacts__phone:focus p {
+  font-weight: 600;
   color: $color-neon-blue;
+  outline: none;
 }
 
 .contacts__address p,

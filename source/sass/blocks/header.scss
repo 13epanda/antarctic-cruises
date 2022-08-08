@@ -201,6 +201,7 @@
   &:hover,
   &:focus {
     color: $color-royal-blue;
+    outline: none;
   }
 
   @include vp-1023 {
