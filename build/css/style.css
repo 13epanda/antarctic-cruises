@@ -974,9 +974,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   height: auto;
   width: 100%;
   padding-top: 34px;
@@ -1009,6 +1009,10 @@ button,
   background-color: #ffffff;
 }
 
+.header__wrapper--closed .header__logo {
+  margin-top: 2px;
+}
+
 .header__wrapper--closed .header__logo-svg {
   fill: #f9fbfd;
 }
@@ -1028,9 +1032,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1661,8 +1665,7 @@ button,
 }
 
 .footer__social {
-  width: auto;
-  max-width: 136px;
+  width: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,6 +1676,8 @@ button,
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -webkit-column-gap: 7px;
   -moz-column-gap: 7px;
   column-gap: 7px;
@@ -1962,14 +1967,6 @@ button,
     line-height: 15px;
   }
 
-  .footer__social {
-    margin-top: -5px;
-    margin-right: -8px;
-    -webkit-column-gap: 7px;
-    -moz-column-gap: 7px;
-    column-gap: 7px;
-  }
-
   .footer__facebook {
     width: 9px;
     height: 16px;
@@ -2025,6 +2022,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 
   .header__logo {
@@ -2045,9 +2043,6 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     row-gap: 43px;
     max-width: 285px;
     width: 100%;
@@ -2094,6 +2089,10 @@ button,
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  .header__wrapper--closed .header__logo {
+    margin-top: 0;
   }
 
   .header__wrapper--closed .header__list {
@@ -2263,6 +2262,15 @@ button,
 
   .contacts__text {
     width: 100%;
+  }
+
+  .footer__social {
+    width: 103px;
+    margin-top: -5px;
+    margin-right: -8px;
+    -webkit-column-gap: 7px;
+    -moz-column-gap: 7px;
+    column-gap: 7px;
   }
 }
 
