@@ -2,6 +2,7 @@ const header = document.querySelector('.header');
 const menu = document.querySelector('.header__wrapper');
 const toggle = document.querySelector('.header__toggle');
 const content = document.querySelector('.header__content');
+const links = content.querySelectorAll('.header__link');
 
 const openMenu = () => {
   menu.classList.remove('header__wrapper--closed');
@@ -9,6 +10,9 @@ const openMenu = () => {
   header.style.position = 'fixed';
   header.style.padding = '0';
   document.addEventListener('click', outsideClickListener);
+  for (let link of links) {
+    link.addEventListener('click', linkClikListener);
+  }
 };
 
 const closeMenu = () => {
@@ -28,6 +32,10 @@ const outsideClickListener = (event) => {
     closeMenu();
   }
 };
+
+const linkClikListener = () => {
+  closeMenu();
+}
 
 const headerMenu = () => {
   header.style.position = 'absolute';
