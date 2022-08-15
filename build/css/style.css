@@ -968,11 +968,6 @@ button,
 }
 
 .header__wrapper {
-  /*
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  */
   height: auto;
   width: 100%;
   padding-top: 34px;
@@ -1028,12 +1023,12 @@ button,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-top: 43px;
   margin-left: 10px;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: auto;
   position: relative;
-  top: 65px;
   left: -42px;
 }
 
@@ -1312,7 +1307,7 @@ button,
 
 .cruise h2 {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -1335,7 +1330,6 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  row-gap: 30px;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
   -webkit-margin-before: 0;
@@ -1350,6 +1344,7 @@ button,
   position: relative;
   width: 260px;
   height: 386px;
+  margin-top: 30px;
   list-style-type: none;
   color: #f9fbfd;
   cursor: pointer;
@@ -2058,29 +2053,7 @@ button,
     fill: #011c40;
   }
 
-  .header__wrapper {
-    /*
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    row-gap: 43px;
-
-    max-width: 285px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: -15px;
-    padding: 20px 15px;
-    background-color: $color-alice-blue;
-    */
-  }
-
   .header__wrapper--closed {
-    /*
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 0;
-    */
     height: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -2092,7 +2065,7 @@ button,
     height: 100vh;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: rgba(1, 28, 64, 0.5);
+    background-color: rgba(0, 43, 102, 0.5);
   }
 
   .header__content {
@@ -2106,7 +2079,6 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    row-gap: 43px;
     max-width: 285px;
     width: 100%;
   }
@@ -2349,7 +2321,7 @@ button,
 
   .cruise h2 {
     margin-top: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 24px;
     line-height: 36px;
   }
