@@ -9,9 +9,13 @@ const headerMenu = () => {
     if (menu.classList.contains('header__wrapper--closed')) {
       menu.classList.remove('header__wrapper--closed');
       menu.classList.add('header__wrapper--opened');
+      header.style.position = 'fixed';
+      header.style.padding = '0';
     } else {
       menu.classList.add('header__wrapper--closed');
       menu.classList.remove('header__wrapper--opened');
+      header.style.position = 'absolute';
+      header.style.padding = '0 20px';
     }
   });
 };
