@@ -35,7 +35,7 @@ const outsideClickListener = (event) => {
 
 const linkClikListener = () => {
   closeMenu();
-}
+};
 
 const headerMenu = () => {
   header.style.position = 'absolute';
