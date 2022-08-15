@@ -14,7 +14,7 @@ const map = () => ymaps.ready(() => {
     balloonContent: 'Волшебный мир айсбергов и пингвинов',
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../../img/map-pin.png',
+    iconImageHref: 'img/map-pin.png',
     iconImageSize: [18, 22],
     iconImageOffset: [-18, -11],
   });
