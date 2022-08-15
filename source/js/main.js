@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenu} from './modules/header-menu';
 import {map} from './modules/map';
+import {smoothScroll} from './modules/smooth-scroll';
 
 
 // ---------------------------------
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   headerMenu();
+  smoothScroll();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
