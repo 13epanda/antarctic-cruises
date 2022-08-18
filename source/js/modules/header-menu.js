@@ -9,6 +9,7 @@ const openMenu = () => {
   menu.classList.add('header__wrapper--opened');
   header.style.position = 'fixed';
   header.style.padding = '0';
+  document.body.style.overflowY = 'hidden';
   document.addEventListener('click', outsideClickListener);
   for (let link of links) {
     link.addEventListener('click', linkClikListener);
@@ -20,6 +21,7 @@ const closeMenu = () => {
   menu.classList.remove('header__wrapper--opened');
   header.style.position = 'absolute';
   header.style.padding = '0 20px';
+  document.body.style.overflowY = null;
   document.removeEventListener('click', outsideClickListener);
 };
 
